@@ -1,17 +1,6 @@
 <template>
   <div id="app">
-    <Row>
-      <Col :xs="{span:24,offset:0}" :sm="{span:6,offset:1}">
-        <Card>
-          <div style="height:200px"></div>
-        </Card>
-      </Col>
-      <Col :xs="{span:24,offset:0}" :sm="{span:16,offset:0}">
-        <Card>
-          <div style="height:800px"></div>
-        </Card>
-      </Col>
-    </Row>
+    <router-view></router-view>
   </div>
 </template>
 <script>
@@ -35,6 +24,10 @@ export default {
 }
 </script>
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   height: 5000px;
   background: #f8f8f9 !important;

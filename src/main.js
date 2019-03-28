@@ -5,6 +5,10 @@ import en from 'iview/dist/locale/en-US'
 import zh from 'iview/dist/locale/zh-CN'
 import VueI18n from 'vue-i18n'
 import router from './router'
+import devArticle from './components/dev-article.vue'
+
+Vue.component('dev-article', devArticle)
+
 Vue.locale = () => {
 }
 router.beforeEach((to, from, next) => {

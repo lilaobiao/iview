@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
 const ua = window.navigator.userAgent;
 let isMobile = false;
 if (ua.indexOf('iPhone') >= 0) isMobile = true;
@@ -14,16 +13,23 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			name: 'home',
-			component: Home,
+			redirect: '/app',
 		},
 		{
-			path: '/about',
-			name: 'about',
+			path: '/dev',
+			name: 'dev',
 			// route level code-splitting
 			// this generates a separate chunk (about.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+			component: () => import(/* webpackChunkName: "dev" */ './views/Dev.vue'),
+		},
+		{
+			path: '/app',
+			name: 'app',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "dev" */ './views/App.vue'),
 		},
 		{
 			path: '/login',
@@ -46,6 +52,22 @@ export default new Router({
 			// this generates a separate chunk (about.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
 			component: () => import(/* webpackChunkName: "admin" */ './views/admin.vue'),
+		},
+		{
+			path: '/push',
+			name: 'push',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "push" */ './views/push.vue'),
+		},
+		{
+			path: '/manage',
+			name: 'manage',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "manage" */ './views/Manage.vue'),
 		},
 	],
 });
