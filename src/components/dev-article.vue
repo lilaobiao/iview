@@ -83,14 +83,7 @@
         </Menu>
       </Sider>
       <Content class="content" :class="{'content-expand': isCollapsed}">
-        <Breadcrumb>
-          <BreadcrumbItem to="/">Home</BreadcrumbItem>
-          <BreadcrumbItem to="/app">Apps</BreadcrumbItem>
-          <BreadcrumbItem to="/">iview</BreadcrumbItem>
-        </Breadcrumb>
-        <Card style="margin-top:16px">
-          <slot></slot>
-        </Card>
+        <slot></slot>
       </Content>
     </Layout>
     <Drawer title="选择配色" v-model="openTheme" :closable="false"></Drawer>
