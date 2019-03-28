@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Row>
+    <Row type="flex" justify="center" align="middle">
       <Col span="4">
         <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg"></Avatar>
       </Col>
