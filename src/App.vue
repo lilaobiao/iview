@@ -1,21 +1,18 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>-->
-      <!-- <Menu :active-name="activeName">
-        <MenuItem to="/" name="/">Home</MenuItem>
-        <MenuItem to="/about" name="/about" replace>About</MenuItem>
-        <MenuItem to="/login" name="/login">login</MenuItem>
-        <MenuItem to="/admin" name="/admin">admin</MenuItem>
-      </Menu> -->
-      <Row>
-        <i-col v-for="n in 24">
-
-        </i-col>
-      </Row>
-    </div>
-    <router-view/>
+    <Row>
+      <Col span="4">
+        <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg"></Avatar>
+      </Col>
+      <Col span="18">
+        <div>支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。</div>
+        <div>支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。</div>
+        <div>支持三种类型：图片、Icon 以及字符，其中 Icon 和字符型可以自定义图标颜色及背景色。</div>
+      </Col>
+      <Col span="2">
+        <Icon type="ios-checkmark" color="#2d8cf0" size="28"></Icon>
+      </Col>
+    </Row>
   </div>
 </template>
 <script>
@@ -34,6 +31,7 @@ export default {
 </script>
 <style>
 body {
+  height: 5000px;
   background: #f8f8f9 !important;
 }
 </style>
