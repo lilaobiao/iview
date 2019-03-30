@@ -5,6 +5,11 @@
 </template>
 <script>
 export default {
+  provide(){
+    return {
+      app:this
+    }
+  },
   data () {
     return {
       activeName: this.$route.path,

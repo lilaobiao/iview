@@ -126,6 +126,46 @@ export default new Router({
 			component: () => import(/* webpackChunkName: "tableS" */ './views/tableS.vue'),
 		},
 		{
+			path: '/form1',
+			name: 'form1',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "form1" */ './views/form1.vue'),
+		},
+		{
+			path: '/upload1',
+			name: 'upload1',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "upload1" */ './views/upload1.vue'),
+		},
+		{
+			path: '/upload2',
+			name: 'upload2',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "upload2" */ './views/upload2.vue'),
+		},
+		{
+			path: '/tabs',
+			name: 'tabs',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "tabs" */ './views/tabs.vue'),
+		},
+		{
+			path: '/com-info',
+			name: 'comInfo',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "comInfo" */ './views/com-info.vue'),
+		},
+		{
 			path: '/manage',
 			name: 'manage',
 			// route level code-splitting
