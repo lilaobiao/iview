@@ -62,6 +62,46 @@ export default new Router({
 			component: () => import(/* webpackChunkName: "push" */ './views/push.vue'),
 		},
 		{
+			path: '/table',
+			name: 'table',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "table" */ './views/table.vue'),
+		},
+		{
+			path: '/table2',
+			name: 'table2',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "table2" */ './views/table2.vue'),
+		},
+		{
+			path: '/table3',
+			name: 'table3',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "table3" */ './views/table3.vue'),
+		},
+		{
+			path: '/table4',
+			name: 'table4',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "table4" */ './views/table4.vue'),
+		},
+		{
+			path: '/table5',
+			name: 'table5',
+			// route level code-splitting
+			// this generates a separate chunk (about.[hash].js) for this route
+			// which is lazy-loaded when the route is visited.
+			component: () => import(/* webpackChunkName: "table5" */ './views/table5.vue'),
+		},
+		{
 			path: '/manage',
 			name: 'manage',
 			// route level code-splitting

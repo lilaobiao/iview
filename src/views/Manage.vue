@@ -29,7 +29,7 @@
                   <Input v-model="form.name"/>
                 </FormItem>
                 <FormItem label="个人介绍">
-                  <Input v-model="form.desc" type="textarea" :rows="4"></Input>
+                  <Input v-model="form.desc" type="textarea" :rows="4"/>
                 </FormItem>
                 <FormItem label="国家">
                   <Select v-model="form.country">
